@@ -288,8 +288,25 @@ main {
 
 .hero-actions {
     display: flex;
+    flex-direction: column-reverse; 
     align-items: center;
-    gap: 2rem;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.hero-actions .btn-primary {
+    display: block; 
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.05rem;
+}
+
+.hero-actions .social-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem; 
 }
 
 .social-links {
