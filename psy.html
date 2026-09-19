@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema PSYTECH | Karine Pêgo</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/kp.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="psy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">KP</div>
+                <span>Karine Pêgo</span>
+            </div>
+            
+            <!-- Botão do menu hambúrguer (Visível apenas no celular) -->
+            <button class="mobile-btn" id="mobile-btn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Agrupa tudo que vai ficar escondido no celular -->
+            <div class="nav-wrapper" id="nav-wrapper">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="#">Depoimentos</a>
+                    <a href="#">Serviços</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Sobre</a>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-toggle" aria-label="Alternar Modo Escuro">
+                        <i class="fa-regular fa-moon"></i>
+                    </button>
+                    <a href="#contato" class="btn-primary">Entrar em contato</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-page">
+
+        <section class="text-project" >
+            <h2>Trabalho de Conclusão de Curso (TCC)</h2>
+            <p>
+                Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) para o IFMG - Campus São João Evangelista. Trata-se de uma aplicação web criada para uso exclusivo do psicólogo educacional do setor de psicologia do campus.
+            </p>
+            <br>
+            <p>
+                A plataforma permite ao profissional cadastrar, editar e excluir informações dos alunos sob sua responsabilidade, além de gerar relatórios nos formatos PDF e Word. Também é possível visualizar gráficos baseados nos dados cadastrados, como, por exemplo, o número de atendimentos realizados em determinado mês.
+            </p>
+            <br>
+            <p>
+                A aplicação conta com um sistema de login e senha, garantindo acesso seguro às funcionalidades. O psicólogo também pode fazer upload de documentos relacionados aos alunos, como laudos, registros e outros arquivos pertinentes.
+            </p>
+        </section>
+
+        <!-- CONTEÚDO DO PROJETO -->
+        <div class="project-header">
+            <div class="tech-tags">
+                <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="tech-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="tech-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="tech-tag"><i class="fa-solid fa-database"></i> SQL</span>
+            </div>
+        </div>
+
+        <!-- Galeria Deslizante CSS Puro -->
+        <div class="project-gallery">
+            <img src="imagens/projetos/psy/psy.png" alt="Tela inicial do sistema PSYTECH">
+            <img src="imagens/projetos/psy/psyhome.png" alt="Dashboard do sistema">
+            <img src="imagens/projetos/psy/psyespera.png" alt="Tela de espera">
+            <img src="imagens/projetos/psy/psyhis.png" alt="Histórico de pacientes">
+            <img src="imagens/projetos/psy/psyrel.png" alt="Geração de relatórios">
+            <img src="imagens/projetos/psy/psydocs.png" alt="Gestão de documentos">
+        </div>
+
+        <div class="project-content">            
+            <h3>Bibliotecas Utilizadas:</h3>
+            <p>Hydrahon, Chart.js, PHPWord.</p>
+        </div>
+
+        <section class="contact-section" id="contato">
+            <div class="contact-content">
+                <h2>Gostou deste projeto?</h2>
+                <p>Ele está disponível no GitHub com visualização privada e documentação completa. Vamos conversar sobre como posso aplicar essas tecnologias na sua ideia!</p>
+                <button class="btn-primary dark whatsapp-btn contato-btn">Entrar em Contato</button>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col brand-col">
+                <div class="logo">
+                    <div class="logo-icon">KP</div>
+                    <span>Karine Dev:</span>
+                </div>
+                <p class="footer-bio">
+                Minha promessa é desenvolver soluções não apenas para máquinas, mas para pessoas. Porque boas soluções também precisam ser humanas.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <a href="#">Início</a>
+                <a href="#sobre-mim">Sobre mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#servicos">Serviços</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="mailto:karinepegoribeiro45@gmail.com">karinepegoribeiro45@gmail.com</a>
+                <a href="https://wa.me/5533987287830" target="_blank">Contato no WhatsApp</a>
+                <span class="footer-info"> </span>
+            </div>
+
+            <div class="footer-col">
+                <h4>Siga-me nas minhas redes sociais, me chame a qualquer momento estarei te esperando.</h4>
+
+                <section>
+                    <div class="hero-actions">
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/karine_pego/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/553387287830?text=Ol%C3%A1,%20tudo%20bem?%20Eu%20encontrei%20o%20seu%20portif%C3%B3lio." target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/karine-pego-ribeiro/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Karinepego" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Criado por <b>Karine Pêgo</b></p>
+            <p>© Todos os direitos reservados. Minas Gerais - Brasil.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

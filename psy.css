@@ -1,0 +1,156 @@
+/* =========================================
+   PÁGINAS DE PROJETO (Ex: PSYTECH)
+   ========================================= */
+
+.text-project {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.text-project h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.text-project p {
+    color: var(--text-secondary);
+    text-align: left;
+}
+
+.project-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 5%;
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-badge {
+    display: inline-block;
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Tags de Tecnologias */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.tech-tag {
+    padding: 0.5rem 1rem;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-content {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.project-content p {
+    margin-bottom: 1.5rem;
+}
+
+.project-content h3 {
+    color: var(--text-primary);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Galeria de Imagens (Estilo Carrossel de Arrasto) */
+.project-gallery {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto; /* Permite arrastar para o lado */
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    margin: 3rem 0;
+    border-radius: 1.5rem;
+}
+
+/* Esconde a barra de rolagem feia no Windows/Chrome */
+.project-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+.project-gallery::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 10px;
+}
+
+.project-gallery img {
+    flex: 0 0 100%; /* A imagem ocupa 100% do espaço, forçando as outras a ficarem ao lado */
+    scroll-snap-align: center; /* Para a imagem sempre no centro ao arrastar */
+    max-height: 500px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+/* Vídeo Responsivo */
+.project-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Chamada para Ação no Final */
+.project-cta {
+    background-color: var(--surface-color);
+    padding: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.project-cta h2 {
+    margin-bottom: 1rem;
+}
+
+.project-cta p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.project-cta .whatsapp-btn {
+    margin-top: 0;
+}
+
+/* Ajuste mobile para a página de projeto */
+@media (max-width: 768px) {
+    .project-header h1 {
+        font-size: 2.2rem;
+    }
+    .project-gallery img {
+        max-height: 300px;
+    }
+    .project-cta {
+        padding: 2rem 1.5rem;
+    }
+}
