@@ -46,7 +46,7 @@
     <main class="project-page">
 
         <section class="text-project" >
-            <h2>Trabalho de Conclusão de Curso (TCC)</h2>
+            <h2>Sistema PSYTECH (TCC)</h2>
             <p>
                 Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) para o IFMG - Campus São João Evangelista. Trata-se de uma aplicação web criada para uso exclusivo do psicólogo educacional do setor de psicologia do campus.
             </p>
@@ -58,6 +58,11 @@
             <p>
                 A aplicação conta com um sistema de login e senha, garantindo acesso seguro às funcionalidades. O psicólogo também pode fazer upload de documentos relacionados aos alunos, como laudos, registros e outros arquivos pertinentes.
             </p>
+            <br>
+            <p>
+               Voce tambem pode ler o TCC caso queira neste arquivo: <a href="https://repositorio.ifmg.edu.br/items/ba53c9ae-0453-408e-b2b4-67491ab85b0b" target="_blank"><strong>TCC Aqui</strong></a>
+            </p>
+
         </section>
 
         <!-- CONTEÚDO DO PROJETO -->
@@ -71,14 +76,31 @@
             </div>
         </div>
 
-        <!-- Galeria Deslizante CSS Puro -->
-        <div class="project-gallery">
-            <img src="imagens/projetos/psy/psy.png" alt="Tela inicial do sistema PSYTECH">
-            <img src="imagens/projetos/psy/psyhome.png" alt="Dashboard do sistema">
-            <img src="imagens/projetos/psy/psyespera.png" alt="Tela de espera">
-            <img src="imagens/projetos/psy/psyhis.png" alt="Histórico de pacientes">
-            <img src="imagens/projetos/psy/psyrel.png" alt="Geração de relatórios">
-            <img src="imagens/projetos/psy/psydocs.png" alt="Gestão de documentos">
+        <!-- Carrossel Automático e Interativo -->
+        <div class="custom-carousel">
+            <div class="carousel-track">
+                <!-- Imagens -->
+                <img src="imagens/projetos/psy/psy.png" class="carousel-slide" alt="Tela inicial do sistema PSYTECH">
+                <img src="imagens/projetos/psy/psyhome.png" class="carousel-slide" alt="Dashboard do sistema">
+                <img src="imagens/projetos/psy/psyespera.png" class="carousel-slide" alt="Tela de espera">
+                <img src="imagens/projetos/psy/psyhis.png" class="carousel-slide" alt="Histórico de pacientes">
+                <img src="imagens/projetos/psy/psyrel.png" class="carousel-slide" alt="Geração de relatórios">
+                <img src="imagens/projetos/psy/psydocs.png" class="carousel-slide" alt="Gestão de documentos">
+            </div>
+            
+            <!-- Setas Laterais (Baseadas na sua imagem) -->
+            <button class="carousel-btn prev-btn" aria-label="Foto anterior"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="carousel-btn next-btn" aria-label="Próxima foto"><i class="fa-solid fa-angle-right"></i></button>
+
+            <!-- Barrinhas indicadoras na parte inferior -->
+            <div class="carousel-indicators">
+                <div class="indicator active" data-index="0"></div>
+                <div class="indicator" data-index="1"></div>
+                <div class="indicator" data-index="2"></div>
+                <div class="indicator" data-index="3"></div>
+                <div class="indicator" data-index="4"></div>
+                <div class="indicator" data-index="5"></div>
+            </div>
         </div>
 
         <div class="project-content">            
