@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Ilário Psicólogo | Karine Pêgo</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/kp.svg">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/projeto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">KP</div>
+                <span>Karine Pêgo</span>
+            </div>
+            
+            <!-- Botão do menu hambúrguer (Visível apenas no celular) -->
+            <button class="mobile-btn" id="mobile-btn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Agrupa tudo que vai ficar escondido no celular -->
+            <div class="nav-wrapper" id="nav-wrapper">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="#sobre-mim">Sobre</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-toggle" aria-label="Alternar Modo Escuro">
+                        <i class="fa-regular fa-moon"></i>
+                    </button>
+                    <a href="#contato" class="btn-primary">Entrar em contato</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-page">
+
+        <section class="text-project" >
+            <h2>Daniel Ilário Psicólogo</h2>
+
+            <div class="project-date">
+                <i class="fa-regular fa-calendar" style="color: var(--text-secondary); font-size: 0.80rem;"></i>
+                <!-- Escreva a data normal e coloque a data invertida (Ano-Mês-Dia) no datetime -->
+                <time id="dynamic-date" datetime="2026-09-20">Setembro de 2026</time>
+            </div>
+
+            <p>
+                Este projeto esta em fase de desenvolvimento. Em breve novas novidades.
+            </p>
+        </section>
+
+        <!-- 
+        CONTEÚDO DO PROJETO
+        <div class="project-header">
+            <div class="tech-tags">
+                <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="tech-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="tech-tag"><i class="fa-brands fa-php"></i> PHP</span>
+                <span class="tech-tag"><i class="fa-solid fa-database"></i> SQL</span>
+            </div>
+        </div>
+        -->
+
+        <!-- 
+        Carrossel Automático e Interativo
+        <div class="custom-carousel">
+            <div class="project-track">
+                <img src="imagens/projetos/psy/psy.png" class="project-slide" alt="Tela inicial">
+                <img src="imagens/projetos/psy/psyhome.png" class="project-slide" alt="Dashboard">
+                <img src="imagens/projetos/psy/psyespera.png" class="project-slide" alt="Tela de espera">
+                <img src="imagens/projetos/psy/psyhis.png" class="project-slide" alt="Histórico">
+                <img src="imagens/projetos/psy/psyrel.png" class="project-slide" alt="Relatórios">
+                <img src="imagens/projetos/psy/psydocs.png" class="project-slide" alt="Documentos">
+            </div>
+            
+            <button class="carousel-btn prev-btn" aria-label="Foto anterior"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="carousel-btn next-btn" aria-label="Próxima foto"><i class="fa-solid fa-angle-right"></i></button>
+         -->
+        
+    <!-- 
+         Barrinhas indicadoras na parte inferior 
+            <div class="carousel-indicators">
+                <div class="indicator active" data-index="0"></div>
+                <div class="indicator" data-index="1"></div>
+                <div class="indicator" data-index="2"></div>
+                <div class="indicator" data-index="3"></div>
+                <div class="indicator" data-index="4"></div>
+                <div class="indicator" data-index="5"></div>
+            </div>
+        </div>
+
+        <div class="project-content">            
+            <h3>Bibliotecas Utilizadas:</h3>
+            <p>Hydrahon, Chart.js, PHPWord.</p>
+        </div>
+    -->
+        <section class="contact-section" id="contato">
+            <div class="contact-content">
+                <h2>Gostou deste projeto?</h2>
+                <p>Ele está disponível no GitHub com visualização privada e documentação completa. Vamos conversar sobre como posso aplicar essas tecnologias na sua ideia!</p>
+                <button class="btn-primary dark whatsapp-btn contato-btn">Entrar em Contato</button>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col brand-col">
+                <div class="logo">
+                    <div class="logo-icon">KP</div>
+                    <span>Karine Dev:</span>
+                </div>
+                <p class="footer-bio">
+                Minha promessa é desenvolver soluções não apenas para máquinas, mas para pessoas. Porque boas soluções também precisam ser humanas.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <a href="index.html">Início</a>
+                <a href="index.html#sobre-mim">Sobre mim</a>
+                <a href="index.html#projetos">Projetos</a>
+                <a href="index.html#servicos">Serviços</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <a href="mailto:karinepegoribeiro45@gmail.com">karinepegoribeiro45@gmail.com</a>
+                <a href="https://wa.me/5533987287830" target="_blank">Contato no WhatsApp</a>
+                <span class="footer-info"> </span>
+            </div>
+
+            <div class="footer-col">
+                <h4>Siga-me nas minhas redes sociais, me chame a qualquer momento estarei te esperando.</h4>
+
+                <section>
+                    <div class="hero-actions">
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/karine_pego/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/553387287830?text=Ol%C3%A1,%20tudo%20bem?%20Eu%20encontrei%20o%20seu%20portif%C3%B3lio." target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/karine-pego-ribeiro/" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/Karinepego" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Criado por <b>Karine Pêgo</b></p>
+            <p>© Todos os direitos reservados. Minas Gerais - Brasil.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
