@@ -98,13 +98,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
 // --- CARROSSEL DE PROJETOS (Páginas Individuais) ---
     const carousel = document.querySelector('.custom-carousel');
     
-    // O 'if' garante que o código só rode se existir um carrossel na página
     if (carousel) {
-        const track = carousel.querySelector('.carousel-track');
+        // Agora procura pela classe isolada do projeto
+        const track = carousel.querySelector('.project-track');
         const slides = Array.from(track.children);
         const nextBtn = carousel.querySelector('.next-btn');
         const prevBtn = carousel.querySelector('.prev-btn');
@@ -112,13 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
         
         let currentIndex = 0;
         let autoPlayInterval;
-        const timeToSlide = 4000; // Tempo em milisegundos (4 segundos)
+        const timeToSlide = 4000;
 
-        // Função que move o carrossel
         const updateCarousel = (index) => {
-            track.style.transform = `translateX(-${index * 100}%)`;
+            // MÁGICA: Mede a largura exata da caixa no momento e move a imagem em pixels
+            const slideWidth = carousel.clientWidth;
+            track.style.transform = `translateX(-${index * slideWidth}px)`;
             
-            // Atualiza as barrinhas
             indicators.forEach(ind => ind.classList.remove('active'));
             indicators[index].classList.add('active');
             
@@ -127,20 +126,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const moveToNext = () => {
             let nextIndex = currentIndex + 1;
-            if (nextIndex >= slides.length) nextIndex = 0; // Volta pro começo
+            if (nextIndex >= slides.length) nextIndex = 0;
             updateCarousel(nextIndex);
         };
 
         const moveToPrev = () => {
             let prevIndex = currentIndex - 1;
-            if (prevIndex < 0) prevIndex = slides.length - 1; // Vai pra última foto
+            if (prevIndex < 0) prevIndex = slides.length - 1;
             updateCarousel(prevIndex);
         };
 
-        // Eventos de clique nas setas
         nextBtn.addEventListener('click', () => {
             moveToNext();
-            resetAutoPlay(); // Pausa o automático ao interagir
+            resetAutoPlay();
         });
 
         prevBtn.addEventListener('click', () => {
@@ -148,7 +146,6 @@ document.addEventListener("DOMContentLoaded", () => {
             resetAutoPlay();
         });
 
-        // Eventos de clique nas barrinhas
         indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', () => {
                 updateCarousel(index);
@@ -156,16 +153,19 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        // Função do timer automático
+        // Proteção extra: se você redimensionar a tela do PC ou virar o celular, ele recalcula o tamanho
+        window.addEventListener('resize', () => {
+            updateCarousel(currentIndex);
+        });
+
         const startAutoPlay = () => {
             autoPlayInterval = setInterval(moveToNext, timeToSlide);
         };
 
         const resetAutoPlay = () => {
-            clearInterval(autoPlayInterval); // Zera o contador
-            startAutoPlay(); // Começa a contar de novo
+            clearInterval(autoPlayInterval);
+            startAutoPlay();
         };
 
-        // Inicia o carrossel automático assim que a página carrega
         startAutoPlay();
     }

@@ -47,6 +47,13 @@
 
         <section class="text-project" >
             <h2>Sistema PSYTECH (TCC)</h2>
+
+            <div class="project-date">
+                <i class="fa-regular fa-calendar" style="color: var(--text-secondary); font-size: 0.80rem;"></i>
+                <!-- Escreva a data normal e coloque a data invertida (Ano-Mês-Dia) no datetime -->
+                <time id="dynamic-date" datetime="2024-09-01">Setembro de 2024</time>
+            </div>
+
             <p>
                 Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC) para o IFMG - Campus São João Evangelista. Trata-se de uma aplicação web criada para uso exclusivo do psicólogo educacional do setor de psicologia do campus.
             </p>
@@ -78,20 +85,18 @@
 
         <!-- Carrossel Automático e Interativo -->
         <div class="custom-carousel">
-            <div class="carousel-track">
-                <!-- Imagens -->
-                <img src="imagens/projetos/psy/psy.png" class="carousel-slide" alt="Tela inicial do sistema PSYTECH">
-                <img src="imagens/projetos/psy/psyhome.png" class="carousel-slide" alt="Dashboard do sistema">
-                <img src="imagens/projetos/psy/psyespera.png" class="carousel-slide" alt="Tela de espera">
-                <img src="imagens/projetos/psy/psyhis.png" class="carousel-slide" alt="Histórico de pacientes">
-                <img src="imagens/projetos/psy/psyrel.png" class="carousel-slide" alt="Geração de relatórios">
-                <img src="imagens/projetos/psy/psydocs.png" class="carousel-slide" alt="Gestão de documentos">
+            <div class="project-track">
+                <img src="imagens/projetos/psy/psy.png" class="project-slide" alt="Tela inicial">
+                <img src="imagens/projetos/psy/psyhome.png" class="project-slide" alt="Dashboard">
+                <img src="imagens/projetos/psy/psyespera.png" class="project-slide" alt="Tela de espera">
+                <img src="imagens/projetos/psy/psyhis.png" class="project-slide" alt="Histórico">
+                <img src="imagens/projetos/psy/psyrel.png" class="project-slide" alt="Relatórios">
+                <img src="imagens/projetos/psy/psydocs.png" class="project-slide" alt="Documentos">
             </div>
             
-            <!-- Setas Laterais (Baseadas na sua imagem) -->
             <button class="carousel-btn prev-btn" aria-label="Foto anterior"><i class="fa-solid fa-angle-left"></i></button>
             <button class="carousel-btn next-btn" aria-label="Próxima foto"><i class="fa-solid fa-angle-right"></i></button>
-
+        
             <!-- Barrinhas indicadoras na parte inferior -->
             <div class="carousel-indicators">
                 <div class="indicator active" data-index="0"></div>
@@ -132,10 +137,10 @@
 
             <div class="footer-col">
                 <h4>Navegação</h4>
-                <a href="#">Início</a>
-                <a href="#sobre-mim">Sobre mim</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#servicos">Serviços</a>
+                <a href="index.html">Início</a>
+                <a href="index.html#sobre-mim">Sobre mim</a>
+                <a href="index.html#projetos">Projetos</a>
+                <a href="index.html#servicos">Serviços</a>
             </div>
 
             <div class="footer-col">

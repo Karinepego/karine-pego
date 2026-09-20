@@ -20,7 +20,6 @@
 .text-project h2 {
     margin-top: 1rem;
     font-size: 2.5rem;
-    margin-bottom: 4rem;
     text-align: center;
 }
 
@@ -68,8 +67,8 @@
 
 .custom-carousel {
     position: relative;
-    width: 100%; /* Ocupa os 1000px inteiros */
-    height: 550px; /* Altura fixa garante que as imagens não sumam */
+    width: 100%;
+    height: 500px;
     margin: 2rem 0 4rem 0;
     overflow: hidden;
     border-radius: 1.5rem;
@@ -77,17 +76,17 @@
     background-color: var(--surface-color); 
 }
 
-.carousel-track {
+.project-track {
     display: flex;
-    height: 100%; /* Preenche a altura do carrossel */
+    width: 100%;
+    height: 100%;
     transition: transform 0.6s ease-in-out; 
 }
 
-.carousel-slide {
+.project-slide {
     flex: 0 0 100%; 
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Exibe o print completo sem cortar */
+    min-width: 100%;
+    object-fit: contain; 
     object-position: center;
 }
 
@@ -152,10 +151,10 @@
 /* Ajustes de Responsividade (Celular) */
 @media (max-width: 1024px) {
     .project-page {
-        padding: 2rem 5%; /* Devolve a margem lateral em telas menores */
+        padding: 2rem 5%;
     }
     .custom-carousel {
-        height: 300px; /* Carrossel fica mais baixo no celular */
+        height: 300px;
     }
     .carousel-btn { 
         width: 40px; 
@@ -163,4 +162,25 @@
         font-size: 1.2rem; 
     }
     .indicator { width: 25px; }
+}
+
+/* Data Dinâmica do Projeto */
+.project-date {
+    color: var(--text-secondary);
+    font-size: 0.90rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.project-date i {
+    color: var(--text-primary);
+}
+
+.time-elapsed {
+    font-style: italic;
+    opacity: 0.7;
+    margin-left: 0.3rem;
 }
