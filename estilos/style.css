@@ -765,21 +765,23 @@ footer {
 @media (max-width: 768px) {
 
     .header-container {
-        flex-direction: row; /* Mantém logo e botão na mesma linha */
+        flex-direction: row; 
         flex-wrap: wrap;
-        justify-content: space-between; /* Um de cada lado */
+        justify-content: space-between; 
+        align-items: center;
         width: 100%;
         padding: 1rem 1.5rem;
     }
 
     .mobile-btn {
-        display: block; /* Mostra o botão hambúrguer no celular */
+        display: block; 
     }
 
     .nav-wrapper {
-        display: none; /* Esconde o menu inicialmente */
+        display: none; 
         flex-direction: column;
         width: 100%;
+        order: 3;
         margin-top: 1rem;
         padding-top: 1rem;
         border-top: 1px solid var(--border-color);
@@ -787,24 +789,25 @@ footer {
     }
 
     .nav-wrapper.active {
-        display: flex; /* Classe que o JavaScript vai usar para abrir */
+        display: flex; 
     }
 
     nav {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
+        width: 100%;
     }
 
     .header-actions {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row; 
+        width: auto;
         gap: 1rem;
+        align-items: center;
     }
 
     .header-actions .btn-primary {
-        width: 100%;
-        text-align: center;
+        display: none; 
     }
 
     .hero-content { flex-direction: column; }
